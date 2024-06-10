@@ -17,3 +17,4 @@ let valorTotal = 0;
 document.querySelector('#precioBase').innerHTML = precioBase;
 document.querySelector('#cantidad').innerHTML = cantidad;
 document.querySelector('#valorTotal').innerHTML = valorTotal;
+

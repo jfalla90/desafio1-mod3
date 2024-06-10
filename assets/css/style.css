@@ -49,11 +49,6 @@ img{
     padding: 10px;
 }
 
-img:hover{
-    filter:opacity(1);
-    transform: rotate(-90deg);
-}
-
 button{
     background-color: hsla(182, 25%, 50%, 0.445);
     padding: 5px;
