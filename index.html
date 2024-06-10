@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>SocialConnect</title>
+</head>
+<body>
+    <main>
+        <div class="flex">
+            <div class="card-1">
+                <h3> Águila Aguilar Cazador de Presas </h3>
+                <img id="foto-aguila" src="./assets/img/foto-aguila.jpg" alt="foto-aguila">
+                <p>Valor: S/6500.00 inc. IGV</p>
+                <button onclick="
+                cantidad = cantidad + 1;
+                valorTotal = cantidad * precioBase;
+                document.querySelector('#cantidad').innerHTML = cantidad;
+                document.querySelector('#valorTotal').innerHTML = valorTotal;
+                ">+</button>
+                
+                <button onclick="
+                cantidad = cantidad - 1;
+                valorTotal = cantidad * precioBase;
+                document.querySelector('#cantidad').innerHTML = cantidad;
+                document.querySelector('#valorTotal').innerHTML = valorTotal;">-</button>
+            </div>
+            <div class="card-2">
+                <h3>Checkout</h3>
+                <p>Cantidad: <span id="cantidad">0</span>
+                </p>
+                <p>Valor Total: <span id="valorTotal">0</span></p>
+                <button value="pagar">Ir a pagar</button>
+            </div>
+        </div>
+    </main> 
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
